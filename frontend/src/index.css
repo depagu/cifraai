@@ -1,0 +1,81 @@
+/* =========================================================
+   CifraAI — Estilos globais
+   Tema escuro com tipografia JetBrains Mono + Inter
+   ========================================================= */
+
+:root {
+  --bg-primary: #0F0F0F;
+  --bg-surface: #1A1A1A;
+  --bg-elevated: #222222;
+  --bg-hover: #2A2A2A;
+  --text-primary: #F0F0F0;
+  --text-secondary: #A0A0A0;
+  --text-muted: #606060;
+  --accent: #F5A623;
+  --accent-dim: rgba(245, 166, 35, 0.15);
+  --accent-hover: #F7B94A;
+  --border: #2E2E2E;
+  --border-accent: rgba(245, 166, 35, 0.4);
+  --error: #E05252;
+  --success: #52C97A;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --transition: 200ms ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color var(--transition), color var(--transition), opacity var(--transition);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Utilitários */
+.mono { font-family: 'JetBrains Mono', monospace; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }

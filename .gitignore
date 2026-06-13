@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.env
+.env.local
+
+# Áudio temporário
+*.wav
+*.mp3
+*.m4a
+*.ogg
+
+# OS
+.DS_Store
+Thumbs.db
